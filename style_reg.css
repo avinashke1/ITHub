@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+}
+
+body{
+	padding-bottom: 50px;
+}
+h1{
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+h2,h3{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+
+#it{
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.center {
+   
+    padding-top: 60px;
+    padding-left: 295px;
+ 
+}
+.teach {
+	text-align: center;
+	background-color: #140772;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0;
+}
+.logo{
+	margin-right: auto;
+	margin-left: auto;
+	width: 6em;
+	padding-top: 100px;
+}
+
+a.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding:15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 305px;
+    margin-top: 20px;
+}
+a.button:hover{
+	background: #2ED1DF;
+	color: white;
+}
+
+body{
+	font-family: myFont;
+}
+	#container{}
+		nav{
+			background: #00002E;
+			color: white;
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+
+
+		}
+			nav ul{
+				display: flex;
+			}
+				nav li{
+					list-style: none;
+					padding: 30px;
+					
+
+				}
+				nav li:hover{
+					background: #FF6600;
+					
+				}
+
+@font-face {
+    font-family: myFont;
+    src: url(openans-bold.ttf);
+}
+
+#one{
+	width: 100vw;
+	height: 15vh;
+	background: #00002E;
+	position: absolute;
+	
+}
+	#one h4{
+		text-align: center;
+		padding: 10px;
+		color: white;
+	}
+	#one p{
+		text-align: center;
+		color: white;
+	}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}	
+
+#preloader  {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 99;
+   	 
+     background: #344557;
+ }
+
+#status  {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background-image: url(image/350.gif);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }

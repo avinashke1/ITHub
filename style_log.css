@@ -1,0 +1,66 @@
+*{
+margin:0;
+}
+#table1{
+       margin-left:200px;
+       background-color:#8CE9C7;
+       margin-right:300px;}
+#table{
+       margin-left:200px;}
+body{
+	padding-bottom: 50px;
+	font-family: myFont;
+	background-image: url("image/ubuntu.jpg");
+}
+
+#container{
+	padding-bottom: 80px;
+}
+		nav{
+			background: #00002E;
+			color: white;
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+
+
+		}
+			nav ul{
+				display: flex;
+			}
+				nav li{
+					list-style: none;
+					padding: 30px;
+					
+
+				}
+				nav li:hover{
+					background: #FF6600;
+					
+				}
+
+@font-face {
+    font-family: myFont;
+    src: url(openans-bold.ttf);
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}	
+

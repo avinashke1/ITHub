@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="main1.css">
+  <title>
+    Registration page
+  </title>
+  <script type="text/javascript" src="filename.js" ></script>
+
+</head>
+<body>
+  <header>
+        <div class="header">
+          <img src="img/header2.jpg">
+          <h1>National Institute of Technology, Durgapur</h1>
+
+        </div>
+  <nav >
+
+    <ul >
+      <div id="login">
+        <li><a>Login</a>
+        	<ul>
+                      <li><a href="loginstudent.html">Student</a></li>
+                      <li><a href="loginteacher.html">Teacher</a></li>
+                </ul>
+            </li>
+              <li>
+                  <a>Register</a>
+                  <ul>
+                      <li><a href="registerstudent.html">Student</a></li>
+                      <li><a href="registerteacher.html">Teacher</a></li>
+                  </ul>
+              </li>
+              <div>
+              <div id="home">
+              <li  >
+                <a href="home.html">Home</a>
+              </li>
+              <li  >
+								<a href="About_Us.html">About Us</a>
+							</li>
+                  <li  >
+                <a href="contact_us.html">Contact Us</a>
+              </li>
+            </div>
+    </ul>
+  </nav>
+</header>
+  <br></br>
+  <h3>
+  Fill the form given below for Registration.
+  </h3>
+<!--  <div>
+  <nav>
+    <ul>
+      <div id="home">
+      <li><a href="Register_personal.html">Personal Details</a>
+      </li>
+      <li><a href="Register_personal.html">Academic Details</a>
+      </li>
+      <div>
+    </ul>
+  </nav>
+</div>-->
+		<div id="form">
+      <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+        <fieldset>
+    <legend>Personal Details</legend>
+       &nbsp <label for="fname">First Name*: <input type="text" name="fname" id="fname" placeholder="Enter First Name" ></label><br></br>
+       &nbsp <label for="lname">Last Name*: <input type="text" name="lname" id="lname" placeholder="Enter Last Name" ></label><br></br>
+       &nbsp <label for="dob">Date of Birth*: <input type="date" name="dob" id="dob" onblur="generateAge()" placeholder="Enter Date of Birth"></label><br></br>
+       &nbsp <label for="age">Age: <input type="number" name="age" id="age" ></label><br></br>
+       &nbsp <label for="gender">Gender: <input type="radio" name="gender" id="gender" value="male" checked> Male &nbsp
+                     <input type="radio" name="gender" value="female"> Female &nbsp
+                     <input type="radio" name="gender" value="other"> Other<br></br>
+      &nbsp <label for="hobby">Hobbies:
+                                   <input type="checkbox" name="hb" id="h1" value="drawing"> Drawing &nbsp
+                                   <input type="checkbox" name="hb" id="h2" value="swimming"> Swimming &nbsp
+                                   <input type="checkbox" name="hb" id="h3" value="dancing">Dancing &nbsp
+                                   <input type="checkbox" name="hb" id="h4" value="reading">Reading &nbsp
+                                   <input type="checkbox" name="hb" id="h5" value="travelling">Travelling &nbsp
+                                   <input type="checkbox" name="hb" id="h6" value="coding">Coding &nbsp
+                                   <input type="checkbox" name="hb" id="chk" value="Other" onclick="hobbieschk()"> Other &nbsp
+                                   <input type="text" id="Other" style="display:none;" placeholder="Enter Other Hobbies">
+                                    <br></br>
+      </fieldset><br></br>
+      <fieldset>
+        <legend>Academic Details</legend>
+        &nbsp <label for="prog">Program*:<select name="prog" id="prog"><label>
+                      <option value="select">Select</option>
+                      <option value="btech">B-Tech</option>
+                      <option value="mtech">M-Tech</option>
+                      <option value="phd">PhD</option>
+                    </select>
+                       <br></br>
+        &nbsp <label for="reg">Registration No.*:<input type="number" name="reg" id="reg" placeholder="Enter Registration Number"></label>
+        <br></br>
+        &nbsp <label for="sem">Semester*:<select name="sem" id="sem"></label>
+                      <option value="select">Select</option>
+                      <option value="1">First</option>
+                      <option value="2">Second</option>
+                      <option value="3">Third</option>
+                      <option value="4`">Forth</option>
+                      <option value="5">Fifth</option>
+                      <option value="6">Sixth</option>
+                      <option value="7">Seventh</option>
+                      <option value="8">Eight</option>
+                    </select>
+                       <br></br>
+        &nbsp <label for="dept">Department*:<select name="dept" id="dept"></label>
+                        <option value="select">Select</option>
+                        <option value="BT">Biotechnology</option>
+                        <option value="CHE">Chemical Engineering</option>
+                        <option value="CE">Civil Engineering</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="ECE">Electronics and Communication Engineering</option>
+                        <option value="EE">Electrical Engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="ME">Mechanical Engineering</option>
+                        <option value="MME">Metallurgy and Material Engineering</option>
+                        </select>
+                        <br></br>
+        &nbsp <label for="roll">Roll No.: <input type="number" name="roll" id="roll" placeholder="Enter Roll No." onblur="rollno();"></label>
+        <br></br>
+        &nbsp <label for="cgpa">C.G.P.A: <input type= "number" name="cgpa" id="cgpa" placeholder="Enter CGPA"></label>
+        </fieldset><br></br>
+        <fieldset>
+          <legend>Contact Details</legend>
+          &nbsp <label for="email">Email:<input type="text" name="email" id="email" onblur="myEmail();" placeholder="Enter Email ID"></label><br></br>
+          &nbsp<span id="demo"></span><br />
+          &nbsp <label for="mobile">Mobile Number: <input type="number" name="mobile" id="mobile" onblur="myMob();" placeholder="Enter Mobile Number"></label><br></br>
+          &nbsp<span id="demo1"></span><br />
+        </fieldset><br></br>
+        <fieldset>
+          <legend>Login Details</legend>
+          &nbsp <label for="uname">Username:<input type="text" name="uname" id="uname"></label><br></br>
+          &nbsp <label for="password">Password: <input type="password" name="password" id="password"></label><br></br>
+          &nbsp <label for="cpassword">Confirm Password: <input type="password" name="cpassword" id="cpassword"></label><br></br>
+        </fieldset>
+       &nbsp <input id="submit" type="submit" value="Submit"><br></br>
+		</form>
+</div>
+</body>
+<html>
